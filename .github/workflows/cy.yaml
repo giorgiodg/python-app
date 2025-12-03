@@ -21,4 +21,4 @@ jobs:
         uses: docker/build-push-action@v6
         with:
           push: true
-          tags: giorgiodg/python-app:${GITHUB_SHA::6}
+          tags: giorgiodg/python-app:${{ github.sha }}
