@@ -2,7 +2,7 @@ replicaCount: 1
 image:
   repository: giorgiodg/python-app
   pullPolicy: IfNotPresent
-  tag: "e93a45"
+  tag: "df7c72"
 imagePullSecrets: []
 nameOverride: ""
 fullnameOverride: ""
