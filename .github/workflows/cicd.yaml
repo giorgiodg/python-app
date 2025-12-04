@@ -44,5 +44,5 @@ jobs:
           argocd login argocd-sever.argocd \
           --insecure --grpc-web \
           --username admin \
-          --password {{ secrets.ARGOCD_PASSWORD}}
+          --password  ${{ secrets.ARGOCD_PASSWORD }}
           argocd app sync python-app
