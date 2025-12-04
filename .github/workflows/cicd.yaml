@@ -1,4 +1,4 @@
-name: ci
+name: cicd
 
 on:
   push:
@@ -6,6 +6,7 @@ on:
       - src/**
     branches:
       - main
+  workflow_dispatch:
 
 jobs:
   ci:
@@ -41,8 +42,9 @@ jobs:
           echo ${{needs.ci.outputs.commit_id}}
           sudo apt update
           sudo apt install yq -y
-          yq -Yi '.image.tag = "${{needs.ci.outputs.commit_id}}"' charts/python-app/values.yaml
-
+          yq --version
+          echo ${{needs.ci.outputs.commit_id}}
+      #          yq -Yi '.image.tag = "${{needs.ci.outputs.commit_id}}"' charts/python-app/values.yaml
       - name: Commit changes
         uses: EndBug/add-and-commit@v9
         with:
