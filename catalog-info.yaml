@@ -3,7 +3,7 @@ kind: Component
 metadata:
   name: python-app
   description: Python app that displays time.
-    github.com/project-slug: giorgiodg/python-app
+  github.com/project-slug: giorgiodg/python-app
 spec:
   type: service
   owner: development
