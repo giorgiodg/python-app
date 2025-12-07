@@ -44,6 +44,7 @@ Test application to setup a CI/CD pipeline including
 
 - Import an existing App
 - Define a Group
+- Import an existing component in the catalog
 
 ### Backstage Software Templates
 
